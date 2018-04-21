@@ -19,10 +19,10 @@ export class HeartRateSensor implements Sensor, HeartRateSensorReading {
 
     // AccelerometerReading implementation
     get timestamp(): number {
-        return 0;
+        throw new Error("Method not implemented.");
     }
     get heartRate(): number {
-        return 0;
+        throw new Error("Method not implemented.");
     }
     // AccelerometerReading implementation End
 

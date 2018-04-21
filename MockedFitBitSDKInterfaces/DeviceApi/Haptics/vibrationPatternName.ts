@@ -1,0 +1,1 @@
+export type VibrationPatternName = "ring" | "bump" | "nudge" | "nudge-max" | "ping" | "confirmation" | "confirmation-max";
