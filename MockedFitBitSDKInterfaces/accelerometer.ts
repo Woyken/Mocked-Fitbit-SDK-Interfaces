@@ -1,0 +1,1 @@
+export { Accelerometer } from "./deviceApi/accelerometer/accelerometer";

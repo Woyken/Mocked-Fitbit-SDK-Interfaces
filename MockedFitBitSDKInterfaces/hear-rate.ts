@@ -1,0 +1,1 @@
+export { HeartRateSensor } from "./deviceApi/heart-rate/heartRateSensor";
