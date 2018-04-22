@@ -1,1 +1,1 @@
-import { Accelerometer } from "./accelerometer/accelerometer";
+export { Accelerometer } from "./accelerometer/accelerometer";
