@@ -5,6 +5,8 @@ All the interfaces are created from [SDK references](https://dev.fitbit.com/buil
 
 Surely this won't be perfect tool to use, but it does help to speed up the development.
 
+All 'bug' reports are welcome! 
+
 ## Who for? 
 
 * Tried developing in [Fitbit studio](http://studio.fitbit.com/)?
@@ -13,6 +15,12 @@ Surely this won't be perfect tool to use, but it does help to speed up the devel
 * Give this a try.
 
 ![Linting example](README-extras/linting_example.png?raw=true "Linting example")
+
+# WARNING!
+
+## Not all exports are set up the same way as they are in Fitbit studio.
+
+Ex. All globally accessible variables (such as console, fetch...) need to be imported through same relative paths and removed before attempting to build.
 
 # Set-up
 
@@ -37,4 +45,7 @@ Surely this won't be perfect tool to use, but it does help to speed up the devel
 * Visual Studio Code
 * TSLint addon
 
+# Known issues
+
+* I couldn't find a way to make all exports appear as Fitbit's global exports. This would remove the need to replace import paths every time.
 
