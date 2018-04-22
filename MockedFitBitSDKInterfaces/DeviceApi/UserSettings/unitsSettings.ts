@@ -1,4 +1,4 @@
-export class UnitsSettings {
+export interface UnitsSettings {
     readonly bodyWeight: "metric" | "us" | "stone";
     readonly distance: "metric" | "us";
     readonly height: "metric" | "us";

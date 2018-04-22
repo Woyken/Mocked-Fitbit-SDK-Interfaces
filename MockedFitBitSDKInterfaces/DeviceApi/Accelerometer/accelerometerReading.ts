@@ -1,4 +1,4 @@
-import {  } from "../../sensors/sensorReading";
+import { SensorReading } from "../Sensors/sensorReading";
 
 export interface AccelerometerReading extends SensorReading {
     readonly x: number | null;

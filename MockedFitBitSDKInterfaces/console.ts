@@ -1,3 +1,4 @@
-import { Console } from "./DeviceApi/Console/console";
+import { Console } from "./CommonApi/Console/console";
 
-export default new Console();
+declare var console: Console;
+export default console;

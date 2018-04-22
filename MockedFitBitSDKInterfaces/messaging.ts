@@ -1,4 +1,4 @@
-import { MessageSocket } from "./DeviceApi/Messaging/messageSocket";
+import { MessageSocket } from "./CommonApi/Messaging/messageSocket";
 
-let peerSocket = new MessageSocket();
+declare var peerSocket: MessageSocket;
 export { peerSocket };

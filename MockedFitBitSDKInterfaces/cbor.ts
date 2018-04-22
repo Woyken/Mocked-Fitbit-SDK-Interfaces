@@ -1,4 +1,4 @@
-import { CBOR } from "./DeviceApi/CBOR/cbor";
+import { CBOR } from "./CommonApi/CBOR/cbor";
 
 let cbor = new CBOR();
 export { cbor };

@@ -1,4 +1,5 @@
 import { Appbit } from "./appbit";
 
-let me = new Appbit();
+declare var me: Appbit;
+export default console;
 export { me };

@@ -1,4 +1,4 @@
-import { Geolocation } from "./DeviceApi/Geolocation/geolocation";
+import { Geolocation } from "./CommonApi/Geolocation/geolocation";
 
-let geolocation = new Geolocation();
+declare var geolocation: Geolocation;
 export { geolocation };

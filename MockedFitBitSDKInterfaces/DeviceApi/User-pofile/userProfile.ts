@@ -1,4 +1,4 @@
-export class UserProfile {
+export interface UserProfile {
     readonly age: number | undefined;
     readonly bmr: number | undefined;
     readonly gender: "male" | "female" | undefined;
@@ -7,7 +7,5 @@ export class UserProfile {
     readonly stride: { readonly walk: number | undefined; readonly run: number | undefined; };
     readonly weight: number | undefined;
 
-    heartRateZone(heartRate: number): "out-of-range" | "fat-burn" | "cardio" | "peak" | "below-custom" | "custom" | "above-custom" {
-        throw new Error("Method not implemented.");
-    }
+    heartRateZone(heartRate: number): "out-of-range" | "fat-burn" | "cardio" | "peak" | "below-custom" | "custom" | "above-custom";
 }

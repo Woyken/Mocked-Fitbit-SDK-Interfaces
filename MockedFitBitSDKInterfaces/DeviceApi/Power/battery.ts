@@ -1,16 +1,9 @@
 import { EventTarget } from "../Events/eventTarget";
 import { Charger } from "./charger";
 
-export class Battery implements EventTarget {
+export interface Battery extends EventTarget {
     // EventTarget implementation
-    addEventListener(type: "change", listener: (this: Charger, event: Event) => any): void {
-    }
-    dispatchEvent(event: Event): boolean {
-        throw new Error("Method not implemented.");
-    }
-    removeEventListener(type: string, listener: EventListener): void {
-        throw new Error("Method not implemented.");
-    }
+    addEventListener(type: "change", listener: (this: Charger, event: Event) => any): void;
     // EventTarget implementation End
 
     chargeLevel: number;

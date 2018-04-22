@@ -38,5 +38,5 @@ export interface GlobalEvents extends EventTarget {
     onunload: ((this: Element, event: Event) => any) | undefined;
     onunselect: ((this: Element, event: Event) => any) | undefined;
 
-    addEventListener(type: K, listener: (this: Element, event: EventMap[K]) => any): void;
+    addEventListener<K>(type: K, listener: (this: Element, event: EventMap[K]) => any): void;
 }

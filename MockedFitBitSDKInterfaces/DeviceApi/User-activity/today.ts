@@ -1,6 +1,6 @@
 import { Activity } from "./activity";
 
-export class Today {
+export interface Today {
     readonly adjusted: Activity;
     readonly local: Activity;
 }

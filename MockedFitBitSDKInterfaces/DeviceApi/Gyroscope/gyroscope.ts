@@ -18,15 +18,10 @@ export class Gyroscope implements Sensor, GyroscopeReading {
     // Sensor implementation End
 
     // GyroscopeReading implementation End
-    get x(): number {
-        return this.readings.x;
-    }
-    get y(): number {
-        return this.readings.y;
-    }
-    get z(): number {
-        return this.readings.z;
-    }
+    readonly timestamp: number | null;
+    readonly x: number | null;
+    readonly y: number | null;
+    readonly z: number | null;
     // GyroscopeReading implementation End
 
     constructor (options?: SensorOptions) {

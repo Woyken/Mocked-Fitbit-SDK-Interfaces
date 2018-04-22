@@ -1,3 +1,3 @@
-export class ExerciseSettings {
+export interface ExerciseSettings {
     readonly poolLength: number;
 }

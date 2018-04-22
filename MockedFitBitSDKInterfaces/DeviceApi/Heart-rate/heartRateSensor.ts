@@ -18,12 +18,8 @@ export class HeartRateSensor implements Sensor, HeartRateSensorReading {
     // Sensor implementation End
 
     // AccelerometerReading implementation
-    get timestamp(): number {
-        throw new Error("Method not implemented.");
-    }
-    get heartRate(): number {
-        throw new Error("Method not implemented.");
-    }
+    readonly timestamp: number | null;
+    readonly heartRate: number | null;
     // AccelerometerReading implementation End
 
     constructor(options?: SensorOptions) {

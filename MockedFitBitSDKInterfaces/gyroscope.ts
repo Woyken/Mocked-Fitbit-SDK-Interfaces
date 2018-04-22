@@ -1,1 +1,0 @@
-export { Gyroscope } from "./DeviceApi/Gyroscope/gyroscope";

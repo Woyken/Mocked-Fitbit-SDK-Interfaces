@@ -18,9 +18,7 @@ export class Barometer implements Sensor, BarometerReading {
     // Sensor implementation End
 
     // BarometerReading implementation
-    get pressure(): number{
-        return this.readings.pressure;
-    }
+    readonly pressure: number | null;
     // BarometerReading implementation End
 
     private readonly readings: BarometerReading | undefined;

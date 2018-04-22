@@ -1,7 +1,7 @@
+import { SensorOptions } from "../Sensors/sensorOptions";
 import { Sensor } from "../sensors/sensor";
 import { SensorErrorEvent } from "../sensors/sensorErrorEvent";
 import { OrientationSensorReading } from "./orientationSensorReading";
-import { SensorOptions } from "../sensors/sensorOptions";
 
 export class OrientationSensor implements Sensor, OrientationSensorReading {
     // Sensor implementation
@@ -9,7 +9,7 @@ export class OrientationSensor implements Sensor, OrientationSensorReading {
     onactivate: (this: Sensor, event: Event) => any;
     onerror: (this: Sensor, event: SensorErrorEvent) => any;
     onreading: (this: Sensor, event: Event) => any;
-    addEventListener(type: "activate" | "reading", listener: (this: Sensor, event: Event) => ): void {
+    addEventListener(type: "activate" | "reading", listener: (this: Sensor, event: Event) => any): void {
         throw new Error("Method not implemented.");
     }
     start(): void {
@@ -21,12 +21,8 @@ export class OrientationSensor implements Sensor, OrientationSensorReading {
     // Sensor implementation End
 
     // OrientationSensorReading implementation
-    get quaternion(): number[] {
-        return this.readings.quaternion;
-    }
-    get timestamp(): number {
-        return this.readings.timestamp;
-    }
+    readonly quaternion: number[] | null;
+    readonly timestamp: number | null;
     // OrientationSensorReading implementation End
 
     constructor (options?: SensorOptions) {
