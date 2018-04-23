@@ -20,23 +20,28 @@ All 'bug' reports are welcome!
 
 ## Not all exports are set up the same way as they are in Fitbit studio.
 
-Ex. All globally accessible variables (such as console, fetch...) need to be imported through same relative paths and removed before attempting to build.
+Ex. All imports are accessible to both Device and Companion. 
 
 # Set-up
 
 * Clone this repository next to your sources.
-* Use imports from this 'library' for supported linting.
+* Add this option to *tsconfig.json*:
+    ```json
+    "compilerOptions": {
+        "lib": ["es5"],
+    }
+    ```
 * To build:
 
-    Replace all relative paths to imports to global import
+    Replace:
     ```typescript
-    import { Accelerometer } from "../MockedFitBitSDKInterfaces/MockedFitBitSDKInterfaces/DeviceApi/accelerometer";
+    import { document } from "document";
     ```
     <<--->>
     ```typescript
-    import { Accelerometer } from "accelerometer";
+    import document from "document";
     ```
-    Paste code with replaced imports to your [Fitbit studio](http://studio.fitbit.com/) application.
+    Paste the code to your [Fitbit studio](http://studio.fitbit.com/) application.
 
 
 
@@ -47,5 +52,5 @@ Ex. All globally accessible variables (such as console, fetch...) need to be imp
 
 # Known issues
 
-* I couldn't find a way to make all exports appear as Fitbit's global exports. This would remove the need to replace import paths every time.
+* I couldn't find a way to export document as default export from ambient module.
 

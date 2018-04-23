@@ -1,1 +1,0 @@
-export { Accelerometer } from "./accelerometer/accelerometer";

@@ -1,1 +1,0 @@
-export { HeartRateSensor } from "./heart-rate/heartRateSensor";
