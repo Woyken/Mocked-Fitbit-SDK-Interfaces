@@ -1,12 +1,5 @@
-declare class CBOR {
-    decode(cbor: ArrayBuffer | ArrayBufferView): any;
-    encode(value: any): ArrayBuffer;
-}
-
 declare module "cbor" {
-    var cbor: CBOR;
-    class cbor_Float {
-        constructor(value: number);
-        value: number;
-    }
+    export function decode(cbor: ArrayBuffer | ArrayBufferView): any;
+    export function encode(value: any): ArrayBuffer;
+    export function Float(value: number): undefined;
 }
