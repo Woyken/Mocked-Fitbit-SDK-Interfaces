@@ -23,6 +23,10 @@ declare module "gyroscope" {
         readonly z: number | null;
         // GyroscopeReading implementation End
     
+        /**
+         * constructor for Gyroscope.
+         * @param options Optional SensorOptions to create sensor with. Ex. { frequency: 100 }.
+         */
         constructor (options?: SensorOptions);
     
         //private readonly readings: GyroscopeReading | undefined;
