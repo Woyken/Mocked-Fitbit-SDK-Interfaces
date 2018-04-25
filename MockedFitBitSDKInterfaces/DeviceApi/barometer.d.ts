@@ -5,7 +5,7 @@ interface BarometerReading {
 declare module "barometer" {
     class Barometer implements Sensor, BarometerReading {
         // Sensor implementation
-        activated: boolean;
+        readonly isactivated: boolean;
         onactivate: (this: Sensor, event: Event) => any;
         onerror: (this: Sensor, event: SensorErrorEvent) => any;
         onreading: (this: Sensor, event: Event) => any;

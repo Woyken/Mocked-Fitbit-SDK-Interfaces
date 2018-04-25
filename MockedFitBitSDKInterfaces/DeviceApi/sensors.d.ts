@@ -1,5 +1,5 @@
 interface Sensor {
-    readonly activated: boolean;
+    readonly isactivated: boolean;
     onactivate: ((this: Sensor, event: Event) => any) | undefined;
     onerror: ((this: Sensor, event: SensorErrorEvent) => any) | undefined;
     onreading: ((this: Sensor, event: Event) => any) | undefined;

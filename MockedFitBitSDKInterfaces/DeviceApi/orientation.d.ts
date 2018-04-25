@@ -5,7 +5,7 @@ interface OrientationSensorReading extends SensorReading {
 declare module "orientation" {
     class OrientationSensor implements Sensor, OrientationSensorReading {
         // Sensor implementation
-        activated: boolean;
+        readonly isactivated: boolean;
         onactivate: (this: Sensor, event: Event) => any;
         onerror: (this: Sensor, event: SensorErrorEvent) => any;
         onreading: (this: Sensor, event: Event) => any;

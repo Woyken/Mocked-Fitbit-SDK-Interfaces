@@ -7,7 +7,7 @@ interface GyroscopeReading extends SensorReading {
 declare module "gyroscope" {
     class Gyroscope implements Sensor, GyroscopeReading {
         // Sensor implementation
-        activated: boolean;
+        readonly isactivated: boolean;
         onactivate: (this: Sensor, event: Event) => any;
         onerror: (this: Sensor, event: SensorErrorEvent) => any;
         onreading: (this: Sensor, event: Event) => any;
