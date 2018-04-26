@@ -1,11 +1,11 @@
 # What is this?
 ## Simple interfaces for Fitbit OS development in TypeScript linting support.
 
-All the interfaces are created from [SDK references](https://dev.fitbit.com/build/reference/) by hand in TypeScript.
+All the interfaces are created from [SDK references](https://dev.fitbit.com/build/reference/) by hand in TypeScript. Also checked in Fitbit studio during runtime for js object properties and such, some documentation mismatches were found.
 
 Surely this won't be perfect tool to use, but it does help to speed up the development.
 
-All 'bug' reports are welcome! 
+All PR's are welcome!
 
 ## Who for? 
 
@@ -32,18 +32,8 @@ Ex. All imports are accessible to both Device and Companion.
     }
     ```
 * To build:
-
-    Replace:
-    ```typescript
-    import { document } from "document";
-    ```
-    <<--->>
-    ```typescript
-    import document from "document";
-    ```
-    Paste the code to your [Fitbit studio](http://studio.fitbit.com/) application.
-
-
+    
+    Just copy your files to [Fitbit studio](http://studio.fitbit.com/) application.
 
 # Requirements
 
@@ -52,5 +42,10 @@ Ex. All imports are accessible to both Device and Companion.
 
 # Known issues
 
-* I couldn't find a way to export document as default export from ambient module.
+* Modules such as "document" need to be imported with word "as".
+    ```typescript
+    import * as document from "document";
+    ```
+    Although, this works fine with Fitbit studio. So no changes are required.
+
 
