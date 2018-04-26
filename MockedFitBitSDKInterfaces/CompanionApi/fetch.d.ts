@@ -33,4 +33,5 @@ interface Response extends Body {
     readonly url: string;
 }
 
-declare function fetch(input: RequestInit): Promise<Response>;
+//declare function fetch(input: RequestInit): Promise<Response>;
+declare function fetch(input?: Request | string, init?: RequestInit): Promise<Response>;
