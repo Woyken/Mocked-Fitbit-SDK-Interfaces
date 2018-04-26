@@ -1,6 +1,6 @@
 interface RequestInit {
     body: string | undefined;
-    headers: Headers | { key: string; } | undefined;
+    headers: Headers | {[key: string]: string} | undefined;
     method: string | undefined;
 }
 
