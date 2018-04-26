@@ -1,7 +1,7 @@
 interface RequestInit {
-    body: string | undefined;
-    headers: Headers | {[key: string]: string} | undefined;
-    method: string | undefined;
+    body?: string | undefined;
+    headers?: Headers | {[key: string]: string} | undefined;
+    method?: string | undefined;
 }
 
 interface Request extends Body {

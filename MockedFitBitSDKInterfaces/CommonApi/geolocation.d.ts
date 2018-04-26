@@ -1,7 +1,7 @@
 interface PositionOptions {
-    enableHighAccuracy: boolean | undefined;
-    maximumAge: number | undefined;
-    timeout: number | undefined;
+    enableHighAccuracy?: boolean | undefined;
+    maximumAge?: number | undefined;
+    timeout?: number | undefined;
 }
 
 interface PositionError {

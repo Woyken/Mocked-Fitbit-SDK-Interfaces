@@ -13,7 +13,7 @@ interface SensorErrorEvent {
 }
 
 interface SensorOptions {
-    readonly frequency: number | undefined;
+    readonly frequency?: number | undefined;
 }
 
 interface SensorReading {

@@ -12,11 +12,11 @@ interface Bounded {
 }
 
 interface ComboButtonEnableDisableOptions {
-    animate: boolean | undefined;
+    animate?: boolean | undefined;
 }
 
 interface ComboButtonShowHideOptions {
-    animate: boolean | undefined;
+    animate?: boolean | undefined;
 }
 
 type EventHandler = (event: Event) => boolean;
@@ -48,9 +48,9 @@ interface Styled {
 }
 
 interface TileListItemOperationOptions {
-    alignment: "middle" | "top" | "bottom" | undefined;
-    animate: boolean | undefined;
-    redraw: boolean | undefined;
+    alignment?: "middle" | "top" | "bottom" | undefined;
+    animate?: boolean | undefined;
+    redraw?: boolean | undefined;
 }
 
 interface Transform {

@@ -1,6 +1,6 @@
 interface JpegDecodeOptions {
-    delete: boolean | undefined;
-    overwrite: boolean | undefined;
+    delete?: boolean | undefined;
+    overwrite?: boolean | undefined;
 }
 
 declare module "jpeg" {
