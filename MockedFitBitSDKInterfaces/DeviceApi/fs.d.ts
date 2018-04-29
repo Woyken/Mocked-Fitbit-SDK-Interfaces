@@ -17,7 +17,7 @@ declare module "fs" {
     function unlinkSync(filename: string): void;
     function statSync(filename: string): FileStats;
     function writeSync(fd: number, buffer: ArrayBuffer, offset?: number | undefined, length?: number | undefined, position?: number | undefined): void;
-    function readSync(fd: number, buffer: ArrayBuffer, offset?: number | undefined, length?: number | undefined, position?: number | undefined): void;
+    function readSync(fd: number, buffer: ArrayBuffer, offset?: number | undefined, length?: number | undefined, position?: number | undefined): number;
     function closeSync(fd: number): void;
     function openSync(filename: string, flags: "r" | "r+" | "w" | "w+" | "a" | "a+"): number;
 }
