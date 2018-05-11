@@ -112,7 +112,7 @@ interface MouseEvent {
 }
 
 interface KeyboardEvent {
-    readonly key: number;
+    readonly key: string;
 }
 
 interface ListScrollEvent {
@@ -488,38 +488,34 @@ interface SVGElementConstructor {
     new(): SVGElement;
 }
 
+interface Document extends ElementSearch, GlobalEvents {
+    ArcElement: ArcElementConstructor;
+    CircleElement: CircleElementConstructor;
+    ComboButton: ComboButtonConstructor;
+    ContainerElement: ContainerElementConstructor;
+    DOMRect: DOMRectConstructor
+    GradientArcElement: GradientArcElementConstructor;
+    GradientRectElement: GradientRectElementConstructor;
+    GraphicsElement: GraphicsElementConstructor;
+    GroupElement: GroupElementConstructor;
+    ImageElement: ImageElementConstructor;
+    LineElement: LineElementConstructor;
+    RectElement: RectElementConstructor;
+    TextAreaElement: TextAreaElementConstructor;
+    TextElement: TextElementConstructor;
+    TileList: TileListConstructor;
+    TileListItem: TileListItemConstructor;
+    VirtualTileList: VirtualTileListConstructor;
+    VirtualTileListItem: VirtualTileListItemConstructor;
+    Element: ElementConstructor;
+    ToggleButton: ToggleButtonConstructor;
+    SquareButton: SquareButtonConstructor;
+    SymbolElement: SymbolElementConstructor;
+    UseElement: UseElementConstructor;
+    SVGElement: SVGElementConstructor;
+}
 
 declare module "document" {
-    const ArcElement: ArcElementConstructor;
-    const CircleElement: CircleElementConstructor;
-    const ComboButton: ComboButtonConstructor;
-    const ContainerElement: ContainerElementConstructor;
-    const DOMRect: DOMRectConstructor
-    const GradientArcElement: GradientArcElementConstructor;
-    const GradientRectElement: GradientRectElementConstructor;
-    const GraphicsElement: GraphicsElementConstructor;
-    const GroupElement: GroupElementConstructor;
-    const ImageElement: ImageElementConstructor;
-    const LineElement: LineElementConstructor;
-    const RectElement: RectElementConstructor;
-    const TextAreaElement: TextAreaElementConstructor;
-    const TextElement: TextElementConstructor;
-    const TileList: TileListConstructor;
-    const TileListItem: TileListItemConstructor;
-    const VirtualTileList: VirtualTileListConstructor;
-    const VirtualTileListItem: VirtualTileListItemConstructor;
-    const Element: ElementConstructor;
-
-    const ToggleButton: ToggleButtonConstructor;
-    const SquareButton: SquareButtonConstructor;
-    const SymbolElement: SymbolElementConstructor;
-    const UseElement: UseElementConstructor;
-    const SVGElement: SVGElementConstructor;
-
-// ElementSearch implementation
-    function getElementById(id: string): Element | null; // getElementById(id: string): T | null;
-    function getElementsByClassName(className: string): Element[];
-    function getElementsByTypeName(typeName: string): Element[];
-    //getElementsByTagName - exists but not in docs?
-// ElementSearch implementation End
+    var document: Document;
+    export = document;
 }

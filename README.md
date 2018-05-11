@@ -25,10 +25,12 @@ Ex. All imports are accessible to both Device and Companion.
 # Set-up
 
 * Clone this repository next to your sources.
-* Add this option to *tsconfig.json*:
+* Add these options to *tsconfig.json*:
     ```json
     "compilerOptions": {
+        "target": "es5",
         "lib": ["es5"],
+        "allowSyntheticDefaultImports": true,
     }
     ```
 * To build:
