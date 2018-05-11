@@ -42,12 +42,12 @@ Ex. All imports are accessible to both Device and Companion.
 * Visual Studio Code
 * TSLint addon
 
+# Ideas
+
+* VSC extension to upload files to Fitbit studio automatically.
+
 # Known issues
 
-* Modules such as "document" need to be imported with word "as".
-    ```typescript
-    import * as document from "document";
-    ```
-    Although, this works fine with Fitbit studio. So no changes are required.
+* None?
 
 
