@@ -50,8 +50,9 @@ Ex. All imports are accessible to both Device and Companion.
 
 * Interfaces such as 'Element' used as types will not be recognized in Fitbit studio.
 
-    Easy solution for now - Add similar lines to top of the file for each unrecognized type:
+    Easy solution for now - [define them locally as 'any'] Add similar lines to top of the file for each unrecognized type:
     ```typescript
     type Element = any;
+    type Event = any;
     ```
 
