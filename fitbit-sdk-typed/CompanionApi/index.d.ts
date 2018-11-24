@@ -12,3 +12,4 @@
 /// <reference path="./settings.d.ts" />
 /// <reference path="./storage.d.ts" />
 /// <reference path="./user-settings.d.ts" />
+/// <reference path="./wake-interval.d.ts" />
