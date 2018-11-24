@@ -1,0 +1,34 @@
+{
+  "name": "fitbit-sdk-typed",
+  "version": "1.0.0",
+  "description": "Non-official attempt to define typescript types for fitbit-sdk",
+  "main": "",
+  "types": "fitbit-sdk-typed/index",
+  "files": [
+    "/fitbit-sdk-typed"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Woyken/Mocked-Fitbit-SDK-Interfaces.git"
+  },
+  "author": "Karolis Užkuraitis <karolis.uzkuraitis+fitsdkt@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Woyken/Mocked-Fitbit-SDK-Interfaces/issues"
+  },
+  "homepage": "https://github.com/Woyken/Mocked-Fitbit-SDK-Interfaces#readme",
+  "keywords": [
+    "fitbit",
+    "fitbitdev",
+    "sdk",
+    "typescript",
+    "types"
+  ],
+  "devDependencies": {
+    "tslint": "^5.11.0",
+    "typescript": "^3.1.6"
+  }
+}
