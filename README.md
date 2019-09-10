@@ -1,3 +1,8 @@
+# Not maintained
+
+This one is just better:
+[fitbit-sdk-types](https://github.com/SergioMorchon/fitbit-sdk-types)
+
 # Typescript support for fitbit apps development
 ## Set-up
 
